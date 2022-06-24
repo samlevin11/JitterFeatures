@@ -56,7 +56,7 @@ def jitterFeatures(in_feature_class: str, out_feature_class: str,
     # Dictionary to lookup the correct arcpy geometry class based on the input feature class shape type
     geometry_lookup = {
         'Polygon': arcpy.Polygon,
-        'Polyline': arcpy.Polygon,
+        'Polyline': arcpy.Polyline,
         'Point': arcpy.PointGeometry,
         'Multipoint': arcpy.Multipoint
     }
